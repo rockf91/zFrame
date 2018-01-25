@@ -7,10 +7,18 @@
 
 var indexSectionsWithContent =
 {
+  0: "cgrz",
+  1: "g",
+  2: "cgr",
+  3: "rz"
 };
 
 var indexSectionNames =
 {
+  0: "all",
+  1: "classes",
+  2: "files",
+  3: "pages"
 };
 
 function convertToId(search)
