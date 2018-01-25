@@ -2,9 +2,9 @@ language: csharp
 solution: zFrame.sln
 sudo: true
 
-branches:
-  only:
-  - gh-pages
+# branches:
+#   only:
+#   - gh-pages
 
 env:
   global:
