@@ -24,4 +24,3 @@ addons:
 after_success:
 - chmod +x ./genDocsAndDeploy.sh
 - "./genDocsAndDeploy.sh"
-
