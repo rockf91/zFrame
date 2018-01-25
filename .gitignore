@@ -1,0 +1,9 @@
+html/
+
+ProjectSettings/
+Library/
+Temp/
+UnityPackageManager/
+obj/
+
+zFrame.userprefs

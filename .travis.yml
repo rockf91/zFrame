@@ -1,0 +1,27 @@
+language: csharp
+solution: zFrame.sln
+sudo: true
+
+branches:
+  only:
+  - gh-pages
+
+env:
+  global:
+  - GH_REPO_NAME: zFrame
+  - DOXYFILE: "$TRAVIS_BUILD_DIR/Doxyfile"
+  - GH_REPO_REF: github.com/rockf91/zFrame.git
+
+addons:
+  apt:
+    packages:
+    - doxygen
+    - doxygen-doc
+    - doxygen-latex
+    - doxygen-gui
+    - graphviz
+
+after_success:
+- chmod +x ./genDocsAndDeploy.sh
+- "./genDocsAndDeploy.sh"
+
